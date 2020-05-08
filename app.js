@@ -17,6 +17,7 @@ app.post('/', (req, res) => {
     let lastName = req.body.last_name;
 
     let data = {
+        // Get more details on https://mailchimp.com/developer/guides/get-started-with-mailchimp-api-3/
         members: [
             {
                 email_address: email,
@@ -32,9 +33,9 @@ app.post('/', (req, res) => {
     let jsonData = JSON.stringify(data);
 
     let options = {
-        url: "https://us4.api.mailchimp.com/3.0/lists/f5bc3f2067",
+        url: "https://usX.api.mailchimp.com/3.0/lists/{list_id}", // provided by mailchimp
         method: "POST",
-        headers: {"Authorization": "edsnow4617 a885d0751e1ec29fa5ba2ea83b5278e4-us4"},
+        headers: {"Authorization": "username api-key"},
         body: jsonData
     };
 
