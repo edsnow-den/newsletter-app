@@ -57,9 +57,3 @@ app.listen(port || herokuPort, () => {
     console.log(`Server is running on hhtp://localhost:${port}`);
 });
 
-//API Key
-// a885d0751e1ec29fa5ba2ea83b5278e4-us4
-
-//Unique ID
-
-//f5bc3f2067
