@@ -3,4 +3,4 @@
 ## Here is a Newsletter Web Application
 
 
-Do a npm i <package name> for packages needed.
+```npm i``` for package needed
